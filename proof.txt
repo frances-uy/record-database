@@ -1,0 +1,32 @@
+Script started on Tue 31 Oct 2023 03:44:02 PM HST
+]0;uyfm@uhx02:~/project1[?1034huhx02:/home/u/uyfm/project1% touch *.c
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% make
+gcc -ansi -pedantic-errors -Wall -c user_interface.c database.h record.h
+gcc -ansi -pedantic-errors -Wall -c database.c database.h record.h
+gcc -o project1 user_interface.o database.o
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% make
+make: `project1' is up to date.
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% touch user_interface.c
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% make
+gcc -ansi -pedantic-errors -Wall -c user_interface.c database.h record.h
+gcc -o project1 user_interface.o database.o
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% touch *.o
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% make
+gcc -o project1 user_interface.o database.o
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% ./project1
+Aloha, Welcome to the Banking Database Program
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: q
+Data saved successfully.
+Exiting the program. Mahalo!
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% exit
+exit
+
+Script done on Tue 31 Oct 2023 03:45:05 PM HST

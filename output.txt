@@ -1,0 +1,172 @@
+Script started on Tue 31 Oct 2023 03:46:37 PM HST
+]0;uyfm@uhx02:~/project1[?1034huhx02:/home/u/uyfm/project1% ./project1
+Aloha, Welcome to the Banking Database Program
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: p
+No records to print. The list is empty. Please select another option.
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: a
+Enter account number: 5
+Enter name: testuser1
+Enter address line (Enter just '.' to finish):
+testaddress1
+.
+Successfully Added Account: 5
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: f
+Enter account number: 7
+Sorry, record not found with given number for account.
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: d
+Enter account number: 2
+Record not found for deletion.
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: p
+Account Number: 5
+Name: testuser1
+Address: testaddress1
+
+
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: q
+Data saved successfully.
+Exiting the program. Mahalo!
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% ./project1 debug
+===================|DEBUG INFORMATION|=========================
+* Debug: Entering readfile function
+* Debug: Parameters - struct record ** start, char filename[]: writefile.txt
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: First record with account number 5 read from file.
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: Exiting readfile function
+===============================================================
+Aloha, Welcome to the Banking Database Program
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: p
+===================|DEBUG INFORMATION|=========================
+* Debug: Entering printAllRecords function
+* Debug: Parameters - Starting address of the linked list: 0x14ea250
+===============================================================
+Account Number: 5
+Name: testuser1
+Address: testaddress1
+
+
+===================|DEBUG INFORMATION|=========================
+* Debug: Processing record at address 0x14ea250 with account number 5
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: Total records processed: 1
+* Debug: Exiting printAllRecords function
+===============================================================
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: a
+Enter account number: 3
+Enter name: testuser2
+Enter address line (Enter just '.' to finish):
+testaddress line1
+testaddressline2
+.
+===================|DEBUG INFORMATION|=========================
+* Debug: Entering getaddress function
+* Debug: Parameters - maxLength: 100
+* Debug: Address: testaddress line1
+testaddressline2
+
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: Entering addRecord function
+* Debug: Parameters - struct record **, int, char [], char []
+* Debug: uaccountno: 3
+* Debug: uname: testuser2
+* Debug: uaddress: testaddress line1
+testaddressline2
+
+===============================================================
+Successfully Added Account: 3
+********************************[PLEASE SELECT A MENU OPTION]*********************************
+add: Add a new record in the database
+printall: Print all records in the database
+find: Find one or more records with a specified account number
+delete: Delete one or more existing records with a specified account number
+quit: Quit the program
+**********************************************************************************************
+
+Enter a menu option: q
+===================|DEBUG INFORMATION|=========================
+* Debug: Entering writefile function
+* Debug: Parameters - struct record * start, char filename[]: writefile.txt
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: Writing record with account number 3 to file
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: Writing record with account number 5 to file
+===============================================================
+===================|DEBUG INFORMATION|=========================
+* Debug: Exiting writefile function
+===============================================================
+Data saved successfully.
+Exiting the program. Mahalo!
+]0;uyfm@uhx02:~/project1uhx02:/home/u/uyfm/project1% exit
+exit
+
+Script done on Tue 31 Oct 2023 03:49:17 PM HST
